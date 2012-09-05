@@ -1,0 +1,36 @@
+---
+- !ruby/object:Eleve
+  prenom: Adji
+  nom: Faye
+  datenais: 13/02/1992
+  moyenne: '18'
+- !ruby/object:Eleve
+  prenom: Mamadou
+  nom: Niang
+  datenais: 10/07/1994
+  moyenne: '11'
+- !ruby/object:Eleve
+  prenom: Soda
+  nom: Ndiaye
+  datenais: 01/01/1990
+  moyenne: '8'
+- !ruby/object:Eleve
+  prenom: Alioune
+  nom: Gueye
+  datenais: 29/11/1992
+  moyenne: '15'
+- !ruby/object:Eleve
+  prenom: Joseph
+  nom: Faye
+  datenais: 13/02/1990
+  moyenne: '7'
+- !ruby/object:Eleve
+  prenom: Fatou
+  nom: Sall
+  datenais: 09/02/1991
+  moyenne: '10'
+- !ruby/object:Eleve
+  prenom: Andalla
+  nom: Mbengue
+  datenais: 12/09/1990
+  moyenne: '12'
