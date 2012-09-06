@@ -68,5 +68,27 @@ describe "Objet Classe" do
 		@classe.save "Classe_test_save.yml"
 	    YAML::load(File.read("Classe_test_save.yml")).should have(7).eleves
 	end
+	
+	#Bloc pour atteidre une couverture maxi de 100%
+	it "Return -1 when trying to compute mean on an empty class" do
+	
+		File.open "Classe_vide.yml", "w" do |f|
+			f.write YAML::dump [] 
+		end
+		
+		classe_vide = Classe.new "Classe_vide.yml"
+		classe_vide.get_mean.should eql -1
+	end
+	
+	it "Return -1 when trying to compute variance on an empty class" do
+	
+		File.open "Classe_vide.yml", "w" do |f|
+			f.write YAML::dump [] 
+		end
+		
+		classe_vide = Classe.new "Classe_vide.yml"
+		classe_vide.get_variance.should eql -1
+	end
+
  
 end
